@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <canvas id="leap-overlay"></canvas>
+    <div class="wrapper">
+        <h1>LUCHTKWALITEIT</h1>
+        <div class="flex content-evenly gap-x-1.5 grid grid-cols-2">
+            <div class="panel gap-1.5 grid grid-cols-2">
+                <div class="indicator" id="o2">
+                    <img src="files/o2.gif" class="animation" alt="">
+                    <p class="info">info Zuurstof</p>
+                </div>
+                <div class="indicator" id="co2">
+                    <img src="files/co2.gif" class="animation" alt="">
+                    <p class="info">info Koolstofdioxide</p>
+                </div>
+                <div class="indicator" id="no2">
+                    <img src="files/no2.gif" class="animation" alt="">
+                    <p class="info">info Stikstof</p>
+                </div>
+                <div class="indicator" id="h2o">
+                    <img src="files/h2o.gif" class="animation" alt="">
+                    <p class="info">info Luchvochtigheid</p>
+                </div>
+            </div>
+            <div class="tree align-stretch">
+                <div class="treebox">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//js.leapmotion.com/leap-1.0.0.js"></script>
+    <script src="//js.leapmotion.com/leap-plugins-0.1.8.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

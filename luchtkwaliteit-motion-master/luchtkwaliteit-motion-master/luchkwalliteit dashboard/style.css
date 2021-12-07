@@ -1,0 +1,71 @@
+@font-face {
+    font-family: ubuntu;
+    src: url(ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    font-family: ubuntu;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+.animation {
+    display: block;
+    animation: fadeOutOpacity 0.3s;
+}
+
+.info {
+    display: none;
+    margin-left: 20px;
+    animation: fadeInOpacity 0.3s;
+}
+
+h1 {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.indicator {
+    height: 45vh;
+    background-color: #dfdfdf;
+}
+.treebox {
+    width: 100%;
+    background-color: white;
+    height: 94vh;
+    background-image: url('files/boom.gif');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 55px;
+    background-repeat: no-repeat;
+}
+#leap-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
